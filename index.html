@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>Corona Status</title>
+</head>
+
+<body>
+
+  <div id="app">
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <ul class="list-group">
+            <li class="list-group-item bg-dark text-white">
+              <h4>Region : {{coronaIndo.name}}</h4>
+            </li>
+            <li class="list-group-item">
+              Total Positif : <span class="badge badge-warning float-right text-white">{{coronaIndo.positif}}
+                Orang</span>
+            </li>
+            <li class="list-group-item">
+              Total Sembuh : <span class="badge badge-success float-right">{{coronaIndo.sembuh}} Orang</span>
+            </li>
+            <li class="list-group-item">
+              Total Meninggal : <span class="badge badge-danger float-right">{{coronaIndo.meninggal}} Orang</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-2">
+        <div class="col-lg-6">
+          <ul class="list-group">
+            <li class="list-group-item bg-dark text-white">
+              <h4>Region : World</h4>
+            </li>
+            <li class="list-group-item">
+              Total Positif : <span class="badge badge-warning float-right text-white">{{positif.value}}
+                Orang</span>
+            </li>
+            <li class="list-group-item">
+              Total Sembuh : <span class="badge badge-success float-right">{{sembuh.value}} Orang</span>
+            </li>
+            <li class="list-group-item">
+              Total Meninggal : <span class="badge badge-danger float-right">{{meninggal.value}} Orang</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
